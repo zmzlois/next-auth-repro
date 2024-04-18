@@ -5,18 +5,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-evenly p-24">
       <div className="flex flex-col items-center justify-center">
         {" "}
-        <h1 className="text-2xl font-bold">Sign in</h1>
-        <form
-          action={async () => {
-            "use server";
-            await signIn("twitter");
-          }}
-        >
-          {" "}
-          <button type="submit" className="flex gap-2 rounded-full p-2 md:p-6">
-            Sign in with Twitter
-          </button>
-        </form>
+        <a href="/login" className="px-4 py-2 border rounded-lg">
+          Log In
+        </a>
       </div>
     </main>
   );
